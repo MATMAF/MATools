@@ -16,7 +16,7 @@ menu = int(input("\nYour choice : "))
 
 
 if menu == 1:
-
+    
     # 1 - Speedtest
 
     st = speedtest.Speedtest()
