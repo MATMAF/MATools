@@ -10,34 +10,39 @@ print(colored("More on https://mat.run/\n", "cyan"))
 
 # menu
 
-print(colored("1 - Speedtest\n2 - Hostname to IP\n3 - IP to hostname", "green"))
+while True:
 
-menu = int(input("\nYour choice : "))
+    print(colored("1 - Speedtest\n2 - Hostname to IP", "green"))
+
+    menu = int(input("\nYour choice : "))
 
 
-if menu == 1:
-    
-    # 1 - Speedtest
+    if menu == 1:
+        
+        # 1 - Speedtest
 
-    st = speedtest.Speedtest()
-    
-    print(colored(f"\nDownload speed : {round(st.download() / 1000 / 1000, 1)} Mbit/s\nUpload speed : {round(st.upload() / 1000 / 1000, 1)} Mbit/s", "red"))
+        st = speedtest.Speedtest()
+        
+        print(colored(f"\nDownload speed : {round(st.download() / 1000 / 1000, 1)} Mbit/s\nUpload speed : {round(st.upload() / 1000 / 1000, 1)} Mbit/s", "red"))
 
-elif menu == 2:
+        break
 
-    # 2 - Hostname to IP
+    elif menu == 2:
 
-    hi = socket.gethostbyname(input("\nEnter hostname : "))
+        # 2 - Hostname to IP
 
-    print(colored(f"\nThe IP is {hi}", "red"))
+        hi = socket.gethostbyname(input("\nEnter hostname : "))
 
-elif menu == 3:
-    
-    # 3 - IP to hostname
+        print(colored(f"\nThe IP is {hi}", "red"))
 
-    ih = socket.gethostbyaddr(input("\nEnter IP : "))
+        break
 
-    print(colored(f"\n The hostname is {ih}", "red"))
+    else:
+
+        # 
+
+        print(colored("\nError please choose a valid option\n", "red"))
+
 # footer
 
 print(colored("\n\nThanks for using this script <3", "magenta"))
