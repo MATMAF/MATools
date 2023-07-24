@@ -14,10 +14,10 @@ while True:
 
     print(colored("1 - Speedtest\n2 - Hostname to IP", "green"))
 
-    menu = int(input("\nYour choice : "))
+    menu = input("\nYour choice : ")
 
 
-    if menu == 1:
+    if menu == '1':
         
         # 1 - Speedtest
 
@@ -27,7 +27,7 @@ while True:
 
         break
 
-    elif menu == 2:
+    elif menu == '2':
 
         # 2 - Hostname to IP
 
