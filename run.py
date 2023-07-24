@@ -10,7 +10,7 @@ print(colored("More on https://mat.run/\n", "cyan"))
 
 # menu
 
-print(colored("1 - Speedtest\n2 - Hostname to IP", "green"))
+print(colored("1 - Speedtest\n2 - Hostname to IP\n3 - IP to hostname", "green"))
 
 menu = int(input("\nYour choice : "))
 
@@ -31,6 +31,13 @@ elif menu == 2:
 
     print(colored(f"\nThe IP is {hi}", "red"))
 
+elif menu == 3:
+    
+    # 3 - IP to hostname
+
+    ih = socket.gethostbyaddr(input("\nEnter IP : "))
+
+    print(colored(f"\n The hostname is {ih}", "red"))
 # footer
 
 print(colored("\n\nThanks for using this script <3", "magenta"))
