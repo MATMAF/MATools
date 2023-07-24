@@ -42,4 +42,3 @@ elif menu == 3:
 
 print(colored("\n\nThanks for using this script <3", "magenta"))
 input("")
-exit(0)
