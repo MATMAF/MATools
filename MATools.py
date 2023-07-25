@@ -12,12 +12,20 @@ print(colored("More on https://mat.run/\n", "cyan"))
 
 while True:
 
-    print(colored("1 - Speedtest\n2 - Hostname to IP", "green"))
+    print(colored("1 - Speedtest", "green"))
+    print(colored("2 - Hostname to IP", "green"))
+    print(colored("\n0 - Exit", "yellow"))
 
     menu = input("\nYour choice : ")
 
 
-    if menu == '1':
+    if menu == '0':
+
+        # 0 - Exit
+
+        break
+    
+    elif menu == '1':
         
         # 1 - Speedtest
 
@@ -47,3 +55,5 @@ while True:
 
 print(colored("\n\nThanks for using this script <3", "magenta"))
 input("")
+
+# end

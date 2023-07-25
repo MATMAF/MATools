@@ -4,14 +4,14 @@ The software is in development.
 
 I will add a lot of features in the next weeks/months.
 
-I will make a list of the feature to develop.
+## Features
 
-Thanks for reading <3.
-
-### Released
+#### Released
 * Speedtest
 * Hostname to IP
-### In development
+#### In development
+* What's my IP
+#### To Do
+* ##### MORE COMMING SOON
 
-
-### To Do
+Thanks for reading <3.
