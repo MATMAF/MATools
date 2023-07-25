@@ -7,3 +7,11 @@ I will add a lot of features in the next weeks/months.
 I will make a list of the feature to develop.
 
 Thanks for reading <3.
+
+### Released
+* Speedtest
+* Hostname to IP
+### In development
+
+
+### To Do
