@@ -250,8 +250,8 @@ while True:
 
                 print(colored("\nError please choose a valid option\n", "red"))
 
-
         break
+
     else:
 
         # Don't choose a valid option
