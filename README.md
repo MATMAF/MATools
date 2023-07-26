@@ -9,8 +9,8 @@ I will add a lot of features in the next weeks/months.
 #### Released
 * Speedtest
 * Hostname to IP
-#### In development
 * What's my IP
+#### In development
 #### To Do
 * ##### MORE COMMING SOON
 

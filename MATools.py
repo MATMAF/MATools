@@ -1,6 +1,7 @@
 from termcolor import colored
 import speedtest
 import socket
+import requests
 
 # header
 
@@ -14,6 +15,7 @@ while True:
 
     print(colored("1 - Speedtest", "green"))
     print(colored("2 - Hostname to IP", "green"))
+    print(colored("3 - What's my IP", "green"))
     print(colored("\n0 - Exit", "yellow"))
 
     menu = input("\nYour choice : ")
@@ -39,15 +41,25 @@ while True:
 
         # 2 - Hostname to IP
 
-        hi = socket.gethostbyname(input("\nEnter hostname : "))
+        hostnameToIP = socket.gethostbyname(input("\nEnter hostname : "))
 
-        print(colored(f"\nThe IP is {hi}", "red"))
+        print(colored(f"\nThe IP is {hostnameToIP}", "red"))
+
+        break
+
+    elif menu == '3':
+
+        # 3 - What's my IP
+
+        whatsMyIP = requests.get("https://api.ipify.org/?format=json").json()['ip']
+
+        print(colored(f"\nYour public IP address is {whatsMyIP}", "red"))
 
         break
 
     else:
 
-        # 
+        # Don't choose a valid option
 
         print(colored("\nError please choose a valid option\n", "red"))
 
