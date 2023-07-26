@@ -4,6 +4,16 @@ The software is in development.
 
 I will add a lot of features in the next weeks/months.
 
-I will make a list of the feature to develop.
+## Features
+
+#### Released
+* Speedtest
+* Hostname to IP
+* What's my IP
+* PC Informations
+#### In development
+* QR Code Generator
+#### To Do
+* ##### MORE COMMING SOON
 
 Thanks for reading <3.
