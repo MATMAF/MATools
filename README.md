@@ -10,7 +10,9 @@ I will add a lot of features in the next weeks/months.
 * Speedtest
 * Hostname to IP
 * What's my IP
+* PC Informations
 #### In development
+* QR Code Generator
 #### To Do
 * ##### MORE COMMING SOON
 
