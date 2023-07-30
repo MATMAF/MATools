@@ -7,6 +7,7 @@ import platform
 from datetime import datetime
 import GPUtil
 from tabulate import tabulate
+import qrcode
 
 # functions
 
@@ -37,6 +38,7 @@ while True:
     print(colored("2 - Hostname to IP", "green"))
     print(colored("3 - What's my IP", "green"))
     print(colored("4 - PC Informations", "green"))
+    print(colored("5 - QR Code generator", "green"))
     print(colored("\n0 - Exit", "yellow"))
 
     menu = input("\nYour choice : ")
@@ -139,7 +141,7 @@ while True:
 
                 break
 
-            elif menuPC == "4":
+            elif menuPC == '4':
 
                 # 4 - Memory
 
@@ -160,7 +162,7 @@ while True:
 
                 break
 
-            elif menuPC == "5":
+            elif menuPC == '5':
 
                 # 5 - Disk
 
@@ -189,7 +191,7 @@ while True:
 
                 break
 
-            elif menuPC == "6":
+            elif menuPC == '6':
 
                 # 6 - GPU
 
@@ -219,7 +221,7 @@ while True:
 
                 break
 
-            elif menuPC == "7":
+            elif menuPC == '7':
 
                 # 7 - Network
 
@@ -250,8 +252,23 @@ while True:
 
                 print(colored("\nError please choose a valid option\n", "red"))
 
+        break
+
+    elif menu == '5':
+
+        # 5 - QR Code generator
+
+        qr = qrcode.QRCode(
+            version=2,
+            error_correction=qrcode.constants.ERROR_CORRECT_Q
+        )
+        qr.add_data(input("\nEnter an URL : "))
+        qr.make(fit=True)
+        qr.make_image(fill_color="black", back_color="white")
+        qr.print_ascii()
 
         break
+
     else:
 
         # Don't choose a valid option
