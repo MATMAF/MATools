@@ -1,19 +1,9 @@
 # MATools
 ### MATMAF's Toolbox
-The software is in development.
-
-I will add a lot of features in the next weeks/months.
-
+It's a toolbox to run practical things.
 ## Features
-
-#### Released
 * Speedtest
 * Hostname to IP
 * What's my IP
 * PC Informations
 * QR Code Generator
-#### In development
-#### To Do
-* ##### MORE COMMING SOON
-
-Thanks for reading <3.
